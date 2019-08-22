@@ -1,5 +1,5 @@
 <?
-echo 'phpのテストです。<br>';
+//echo 'phpのテストです。<br>';
 echo substr($dbinfo);
 $dbinfo = parse_url(getenv('DATABASE_URL'));
 $dsn = 'pgsql:host=' . $dbinfo['host'] . ';dbname=' . substr($dbinfo['path'], 1);
